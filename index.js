@@ -6,6 +6,8 @@ const server=require('./server.js');
   // res.sendFile(__dirname +'/silvia.html');               
 //});
 
+server.use(express.static('public'))
+
 
 server.get('/profiles',(req,res)=>
 {
