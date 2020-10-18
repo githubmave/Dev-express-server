@@ -11,7 +11,7 @@ server.get('/profile/:name', (req, res) => {
     console.log(req.params)
 
     switch(req.params.name) {
-        case 'silver':
+        case 'silvia':
             return res.sendFile(__dirname + '/silvia.html')
 
        case 'sampson':
