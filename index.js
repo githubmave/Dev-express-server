@@ -7,14 +7,15 @@ server.get('/profile',(req,res)=>
 });
 
 
-server.get('/trouts/:trout', (req, res) => {
+server.get('/profile/:name', (req, res) => {
     console.log(req.params)
 
     switch(req.params.name) {
-        case 'one':
-            return res.sendFile(__dirname + '/sampson.html')
+        case 'silver':
+            return res.sendFile(__dirname + '/silvia.html')
 
-       
+       case 'sampson':
+            return res.sendFile(__dirname + '/sampson.html')
 
         default:
             res.sendFile(__dirname + '/silvia.html')
