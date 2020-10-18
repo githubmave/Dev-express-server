@@ -26,7 +26,7 @@ server.get('/profiles/:id,(req, res) => {
             return res.sendFile(__dirname + '/sampson.html')
 
         default:
-            res.sendFile(__dirname + '/silvia.html')
+            res.sendFile(__dirname + '/profiles.html')
     }
 
 
