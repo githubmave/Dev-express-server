@@ -1,10 +1,10 @@
 const server=require('./server.js');
 
 
-server.get('/profile',(req,res)=>
-{
-   res.sendFile(__dirname +'/silvia.html');               
-});
+//server.get('/profile',(req,res)=>
+//{
+  // res.sendFile(__dirname +'/silvia.html');               
+//});
 
 
 server.get('/profile/:name', (req, res) => {
