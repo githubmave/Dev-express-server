@@ -8,6 +8,13 @@ const server=require('./server.js');
 
 server.use(express.static('public'))
 
+server.post('/name-compliment',(req,res)=>{
+
+     //res.send('<form action='/formHandler>'  method="post'><input name='></form>');
+  
+     res.sendFile(__dirname +"/public/get-name.html);
+})
+
 
 server.get('/profiles',(req,res)=>
 {
